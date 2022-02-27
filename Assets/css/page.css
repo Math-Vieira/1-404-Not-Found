@@ -107,5 +107,11 @@ footer {
   color: #BDBDBD;
   width: 100%;
 }
+@media (max-width: 998px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}
 
 /*# sourceMappingURL=page.css.map */
