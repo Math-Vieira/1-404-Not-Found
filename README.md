@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://fervent-kirch-1c1db7.netlify.app/">
+    <a href="https://angry-pare-a68f7c.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/Math-Vieira/Button-component">
+    <a href="https://github.com/Math-Vieira/1-404-Not-Found">
       Solution
     </a>
     <span> | </span>
@@ -28,7 +28,7 @@
 
 
   - [Built With](#built-with)
-	HTML, CSS, JS and Sass
+	HTML, CSS and Sass
 
 ## Contact
 
