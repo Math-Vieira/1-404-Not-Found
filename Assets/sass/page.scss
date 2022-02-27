@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+
+@mixin center {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@mixin for_phone {
+    @media (max-width: 998px) {
+        @content;
+    }
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  @include for_phone{
+    left: 20px
+}
+}
+
+header .header {
+  @include center;
+  padding: 15px 0;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.centralize {
+  @include center;
+  display: flex;
+  padding: 120px 0;
+  gap: 120px;
+  @include for_phone{
+      flex-direction: column;
+      margin: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.img {
+  max-width: 540px;
+}
+
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: -0.035em;
+}
+
+.text p {
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  max-width: 381px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include for_phone{
+        height: auto;
+    }
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    @include for_phone{
+        gap: 30px;
+    }
+}
+
+button {
+  font-family: "Inconsolata", monospace;
+  font-weight: 2000;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #ffffff;
+  width: 216px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+footer {
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: #BDBDBD;
+  width: 100%;
+}
